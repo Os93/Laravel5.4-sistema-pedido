@@ -176,6 +176,7 @@ return [
         // sistema_pedidos\Providers\BroadcastServiceProvider::class,
         sistema_pedidos\Providers\EventServiceProvider::class,
         sistema_pedidos\Providers\RouteServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
     ],
 
@@ -225,6 +226,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        
+        'Form' => Collective\Html\FormFacade::class,
+      'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 

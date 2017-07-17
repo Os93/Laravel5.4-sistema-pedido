@@ -11,11 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+//agrupa todos los metodos del controlador
+Route::resource('/articulos', 'ArticuloController');
+
+Route::resource('/', 'LoginController');
 
 
-Route::get('/hola', 'ArticuloController@retornar');
 
 
