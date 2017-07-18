@@ -22,4 +22,6 @@ class ArticuloController extends Controller
     	return view ("articulos.create");
     }
     
+    
+    
 }
