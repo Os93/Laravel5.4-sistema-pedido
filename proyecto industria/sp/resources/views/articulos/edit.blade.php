@@ -16,12 +16,12 @@
       {!!Form::model($articulo,['method'=>'PATCH','route'=>['articulos.update',$articulo->referencia]])!!}
             {{Form::token()}}
             <div class="form-group">
-            	<label for="nombre">Nombre</label>
-            	<input type="text" name="nombre" class="form-control" value="{{$articulo->descripcion}}" placeholder="Nombre...">
+            	<label for="nombre">Descripción</label>
+            	<input type="text" name="descripcion" class="form-control" value="{{$articulo->descripcion}}" placeholder="Nombre...">
             </div>
             <div class="form-group">
-            	<label for="descripcion">Descripción</label>
-            	<input type="text" name="descripcion" class="form-control" value="{{$articulo->precio}}" placeholder="Descripción...">
+            	<label for="descripcion">Precio</label>
+            	<input type="text" name="precio" class="form-control" value="{{$articulo->precio}}" placeholder="Descripción...">
             </div>
             <div class="form-group">
             	<button class="btn btn-primary" type="submit">Guardar</button>

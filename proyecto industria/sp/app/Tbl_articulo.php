@@ -9,8 +9,8 @@ class Tbl_articulo extends Model
     //se hace referencia a los campos de la tabla
     protected $table='tbl_articulo';
     protected $primaryKey='referencia';
-    
-    public $timetamps=false;
+
+    public $timestamps=false;
    
     //determinamos que campos resiviran un valor
     protected $fillable =
