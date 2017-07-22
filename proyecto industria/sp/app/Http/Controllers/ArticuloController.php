@@ -57,5 +57,4 @@ class ArticuloController extends Controller
         $articulo->update();
         return Redirect::to('/articulos');
     }
-
-}
+  }

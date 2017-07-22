@@ -14,7 +14,7 @@
 
 //agrupa todos los metodos del controlador
 Route::resource('/articulos', 'ArticuloController');
-
+Route::resource('/clientes', 'ClienteController');
 Route::resource('/', 'LoginController');
 
 
