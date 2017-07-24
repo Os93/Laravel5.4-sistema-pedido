@@ -57,4 +57,11 @@ class ArticuloController extends Controller
         $articulo->update();
         return Redirect::to('/articulos');
     }
+
+    public function destroy($id)
+    {
+        $articulo=Tbl_articulo::findOrFail($id);
+        $articulo->delete();
+        return Redirect::to('articulos');
+    }
   }
